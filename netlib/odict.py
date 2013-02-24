@@ -159,6 +159,18 @@ class ODict:
         self.lst = nlst
         return count
 
+    def iterkeys(self):
+        keys = []
+	for i in self.lst:
+            keys.append(i[0])
+        return keys
+
+    def itervalues(self):
+        values = []
+        for i in self.lst:
+            values.append(i[1])
+        return values
+
 
 class ODictCaseless(ODict):
     """
